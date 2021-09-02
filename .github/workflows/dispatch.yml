@@ -8,6 +8,7 @@ on:
 jobs:
   test:
     name: Test workflow_dispatch input
+    runs-on: ubuntu-latest
     steps:
       - run: |
           echo "Variable input:"
