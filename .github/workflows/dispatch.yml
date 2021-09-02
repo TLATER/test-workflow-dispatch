@@ -1,0 +1,14 @@
+name: test
+on:
+  workflow_dispatch:
+    inputs:
+      test_variable:
+        description: Test variable
+        required: true
+jobs:
+  test:
+    name: Test workflow_dispatch input
+    steps:
+      - run: |
+          echo "Variable input:"
+          echo "${INPUT_TEST_VARIABLE}"
